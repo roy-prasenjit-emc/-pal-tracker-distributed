@@ -31,7 +31,8 @@ public class StoryController {
             StoryRecord record = gateway.create(mapToFields(form));
             return new ResponseEntity<>(present(record), HttpStatus.CREATED);
         }
-
+        System.out.println(form.projectId);
+        System.out.println(form.toString());
         return new ResponseEntity<>(HttpStatus.SERVICE_UNAVAILABLE);
     }
 
