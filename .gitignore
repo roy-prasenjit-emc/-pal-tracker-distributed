@@ -8,3 +8,4 @@ build
 .env
 ci/variables.yml
 pal-tracker-distributed-codebase.txt
+out
